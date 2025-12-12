@@ -24,7 +24,7 @@ const projects = [
     {
         title: "Cadet Leadership Program",
         description: "As Cadet Commander, I lead the Heartland Composite Squadron's cadet corps. I oversee training programs, conduct leadership development, and mentor the next generation of aviation and emergency services professionals.",
-        image: "Images/Profile_CAP-modified.png",
+        image: "Images/Profile.jpg",
         tags: ["Leadership", "Training", "Mentorship"],
         github: "https://michael6gledhill.github.io/",
         live: "https://michael6gledhill.github.io/"
