@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript.
 
+**[🚀 View Live Portfolio](https://michael6gledhill.github.io/Michael-Gledhill-Portfolio/)**
+
 ## Features
 
 - **Fully Responsive Design** - Works great on desktop, tablet, and mobile devices
