@@ -1,3 +1,24 @@
+// Theme Toggle
+function setupThemeToggle() {
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    // Check for saved theme or prefer-color-scheme
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    if (savedTheme === 'dark') {
+        html.setAttribute('data-theme', 'dark');
+        themeToggle.textContent = '☀️';
+    }
+    
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = html.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+    });
+}
+
 // Projects data - Civil Air Patrol Experience
 const projects = [
     {
@@ -185,6 +206,7 @@ function setupActiveNavLink() {
 
 // Initialize all functions
 document.addEventListener('DOMContentLoaded', () => {
+    setupThemeToggle();
     renderProjects();
     setupMobileMenu();
     setupContactForm();
