@@ -7,12 +7,14 @@ A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript.
 ## Features
 
 - **Fully Responsive Design** - Works great on desktop, tablet, and mobile devices
-- **Modern UI** - Clean, professional design with smooth animations
+- **Modern Glassmorphism UI** - Frosted glass effect with smooth animations
+- **Dark/Light Theme** - Toggle between dark and light modes
 - **Interactive Elements** - Hover effects, smooth scrolling, and dynamic content
-- **Projects Showcase** - Display your best work with descriptions and links
+- **Civil Air Patrol Focus** - Showcase your CAP experience with photos
 - **Skills Section** - Categorized skills and technologies
 - **Contact Form** - Get in touch with visitors
 - **Social Links** - Connect on multiple platforms
+- **Auto-Deploy** - GitHub Actions auto-deploys on every push
 - **GitHub Pages Ready** - Deploy directly to GitHub Pages
 
 ## Quick Start
@@ -23,13 +25,41 @@ A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript.
 4. Replace project information with your own projects
 5. Push to GitHub
 
-## GitHub Pages Deployment
+## Deployment
 
-1. Go to your repository settings
-2. Scroll to "GitHub Pages"
-3. Select "Deploy from a branch"
-4. Choose the `main` branch and `/root` folder
-5. Save and your portfolio will be live at `https://yourusername.github.io/Michael-Gledhill-Portfolio`
+### GitHub Pages Auto-Deployment ✅
+
+This portfolio uses **GitHub Actions** for automatic deployment to GitHub Pages.
+
+**Setup Instructions:**
+
+1. **Go to your repository settings:**
+   - Navigate to https://github.com/michael6gledhill/Michael-Gledhill-Portfolio/settings
+
+2. **Enable GitHub Pages:**
+   - Click **Pages** in the left sidebar
+   - Under "Build and deployment"
+   - Select **"Deploy from a branch"**
+   - Branch: `main`
+   - Folder: `/ (root)`
+   - Click **Save**
+
+3. **View your deployment:**
+   - Go to the **Actions** tab
+   - Watch the workflow run
+   - Once complete (green checkmark), your site is live!
+
+**Live URL:** `https://michael6gledhill.github.io/Michael-Gledhill-Portfolio/`
+
+### How Auto-Deployment Works
+
+- Every time you push to `main`, GitHub Actions automatically:
+  1. Checks out your code
+  2. Uploads it to GitHub Pages
+  3. Deploys your site (takes ~1-2 minutes)
+  4. You can monitor progress in the **Actions** tab
+
+**Workflow File:** `.github/workflows/deploy.yml`
 
 ## Customization
 
@@ -40,29 +70,38 @@ A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript.
 
 ### Modify Projects
 - Open `script.js` and update the `projects` array with your projects
-- Each project needs: title, description, emoji, tags, github link, and live demo link
+- Each project needs: title, description, image, tags, github link
 
 ### Change Colors
 - Edit the CSS variables in `styles.css` `:root` section
 - Customize primary, secondary, and accent colors
 
+### Toggle Dark/Light Theme
+- Click the 🌙/☀️ button in the top-right corner
+- Your preference is saved to browser storage
+
 ## Files Structure
 
 ```
-├── index.html      # Main HTML file
-├── styles.css      # Styling and responsive design
-├── script.js       # JavaScript functionality
-├── README.md       # This file
-└── .nojekyll       # Tells GitHub Pages to serve the site as-is
+├── .github/
+│   └── workflows/
+│       └── deploy.yml       # GitHub Actions workflow
+├── Images/                  # Your portfolio images
+├── index.html               # Main HTML file
+├── styles.css               # Styling with glassmorphism
+├── script.js                # JavaScript functionality
+├── README.md                # This file
+└── .nojekyll                # Tells GitHub Pages to serve as-is
 ```
 
 ## Technologies Used
 
 - HTML5
-- CSS3 (Grid, Flexbox, Gradients)
+- CSS3 (Grid, Flexbox, Gradients, Backdrop Blur)
 - Vanilla JavaScript
 - Responsive Design
-- CSS Animations
+- CSS Animations & Transitions
+- GitHub Actions for CI/CD
 
 ## Browser Support
 
@@ -72,10 +111,20 @@ A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript.
 - Edge (latest)
 - Mobile browsers
 
+## Design Features
+
+- **Glassmorphism**: Modern frosted glass effect with backdrop blur
+- **Smooth Animations**: Fade-in, hover, and scroll animations
+- **Theme System**: Dark/light mode with localStorage persistence
+- **Responsive**: Works perfectly on all device sizes
+- **Accessible**: Semantic HTML and keyboard navigation
+
 ## License
 
 Feel free to use this template for your own portfolio!
 
 ## Contact
+
+Have questions? Reach out on social media or email!
 
 Have questions? Reach out on social media or email!
