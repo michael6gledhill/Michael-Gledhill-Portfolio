@@ -1,52 +1,28 @@
 // Projects data
 const projects = [
     {
-        title: "Project One",
-        description: "A full-stack web application built with React and Node.js. Features real-time data updates and responsive design.",
-        emoji: "🚀",
-        tags: ["React", "Node.js", "MongoDB"],
-        github: "https://github.com",
-        live: "https://example.com"
+        title: "Photo Metadata App",
+        description: "Extract and organize photo metadata with an intuitive interface. Manage and analyze image data efficiently.",
+        emoji: "📸",
+        tags: ["Python", "UI", "Data Processing"],
+        github: "https://github.com/michael6gledhill",
+        live: "https://michael6gledhill.github.io/"
     },
     {
-        title: "Project Two",
-        description: "An e-commerce platform with payment integration. Built with Vue.js and Express backend.",
-        emoji: "🛒",
-        tags: ["Vue.js", "Express", "PostgreSQL"],
-        github: "https://github.com",
-        live: "https://example.com"
+        title: "CyberPatriot Runbook",
+        description: "Comprehensive cybersecurity operations and hardening procedures. Documentation for security best practices.",
+        emoji: "🔒",
+        tags: ["Cybersecurity", "Documentation", "Security Hardening"],
+        github: "https://github.com/michael6gledhill",
+        live: "https://michael6gledhill.github.io/"
     },
     {
-        title: "Project Three",
-        description: "A data visualization dashboard that analyzes trends. Created with D3.js and Python Flask API.",
-        emoji: "📊",
-        tags: ["D3.js", "Flask", "Python"],
-        github: "https://github.com",
-        live: "https://example.com"
-    },
-    {
-        title: "Project Four",
-        description: "Mobile-first progressive web app for task management. Offline functionality with service workers.",
-        emoji: "✅",
-        tags: ["PWA", "JavaScript", "Service Workers"],
-        github: "https://github.com",
-        live: "https://example.com"
-    },
-    {
-        title: "Project Five",
-        description: "Real-time chat application with WebSocket support. Built with Socket.io and React.",
-        emoji: "💬",
-        tags: ["Socket.io", "React", "WebSocket"],
-        github: "https://github.com",
-        live: "https://example.com"
-    },
-    {
-        title: "Project Six",
-        description: "AI-powered content recommendation engine. Uses machine learning and API integration.",
-        emoji: "🤖",
-        tags: ["Machine Learning", "Python", "API"],
-        github: "https://github.com",
-        live: "https://example.com"
+        title: "Personal Portfolio",
+        description: "Professional portfolio showcasing leadership, aviation, and technical experience with modern web design.",
+        emoji: "💼",
+        tags: ["HTML5", "CSS3", "JavaScript"],
+        github: "https://github.com/michael6gledhill/Michael-Gledhill-Portfolio",
+        live: "https://michael6gledhill.github.io/Michael-Gledhill-Portfolio/"
     }
 ];
 
