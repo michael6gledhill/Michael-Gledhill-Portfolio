@@ -19,57 +19,57 @@ function setupThemeToggle() {
     });
 }
 
-// // Projects data - Civil Air Patrol Experience
-// const projects = [
-//     {
-//         title: "Cadet Leadership Program",
-//         description: "As Cadet Commander, I lead the Heartland Composite Squadron's cadet corps. I oversee training programs, conduct leadership development, and mentor the next generation of aviation and emergency services professionals.",
-//         image: "Images/Profile.jpg",
-//         tags: ["Leadership", "Training", "Mentorship"],
-//         github: "https://michael6gledhill.github.io/",
-//         live: "https://michael6gledhill.github.io/"
-//     },
-//     {
-//         title: "Emergency Services Operations",
-//         description: "I coordinate and participate in Civil Air Patrol emergency services missions. Our squadron responds to search and rescue operations and provides aerial support for community emergencies.",
-//         image: "Images/ENC1.jpg",
-//         tags: ["Emergency Services", "SAR", "Operations"],
-//         github: "https://michael6gledhill.github.io/",
-//         live: "https://michael6gledhill.github.io/"
-//     },
-//     { 
-//         title: "Aerospace Education",
-//         description: "I develop and deliver aerospace education programs that inspire cadets to pursue aviation careers. These programs include flight principles, navigation, and aviation history.",
-//         image: "Images/ENC2.jpg",
-//         tags: ["Education", "Aviation", "STEM"],
-//         github: "https://michael6gledhill.github.io/",
-//         live: "https://michael6gledhill.github.io/"
-//     },
-//     {
-//         title: "Squadron Training & Development",
-//         description: "I manage comprehensive training programs including ground school, orientation flights, and advanced cadet certifications. Every cadet receives structured, progressive training.",
-//         image: "Images/SUPT1.jpg",
-//         tags: ["Training", "Development", "Certification"],
-//         github: "https://michael6gledhill.github.io/",
-//         live: "https://michael6gledhill.github.io/"
-//     },
-//     {
-//         title: "Cadet Orientation Flights",
-//         description: "I coordinate orientation flights that give cadets their first experience in flight. These flights are crucial for inspiring future pilots and aviation professionals.",
-//         image: "Images/PFA1.jpg",
-//         tags: ["Aviation", "Flight", "Experience"],
-//         github: "https://michael6gledhill.github.io/",
-//         live: "https://michael6gledhill.github.io/"
-//     },
-//     {
-//         title: "Squadron Support & Administration",
-//         description: "I manage day-to-day squadron operations, coordinate meetings, maintain records, and ensure compliance with CAP regulations and standards.",
-//         image: "Images/SUPT2.jpg",
-//         tags: ["Administration", "Operations", "Compliance"],
-//         github: "https://michael6gledhill.github.io/",
-//         live: "https://michael6gledhill.github.io/"
-//     }
-// ];
+// Projects data - Civil Air Patrol Experience
+const projects = [
+    {
+        title: "Cadet Leadership Program",
+        description: "As Cadet Commander, I lead the Heartland Composite Squadron's cadet corps. I oversee training programs, conduct leadership development, and mentor the next generation of aviation and emergency services professionals.",
+        image: "Images/Profile.jpg",
+        tags: ["Leadership", "Training", "Mentorship"],
+        github: "https://michael6gledhill.github.io/",
+        live: "https://michael6gledhill.github.io/"
+    },
+    {
+        title: "Emergency Services Operations",
+        description: "I coordinate and participate in Civil Air Patrol emergency services missions. Our squadron responds to search and rescue operations and provides aerial support for community emergencies.",
+        image: "Images/ENC1.jpg",
+        tags: ["Emergency Services", "SAR", "Operations"],
+        github: "https://michael6gledhill.github.io/",
+        live: "https://michael6gledhill.github.io/"
+    },
+    { 
+        title: "Aerospace Education",
+        description: "I develop and deliver aerospace education programs that inspire cadets to pursue aviation careers. These programs include flight principles, navigation, and aviation history.",
+        image: "Images/ENC2.jpg",
+        tags: ["Education", "Aviation", "STEM"],
+        github: "https://michael6gledhill.github.io/",
+        live: "https://michael6gledhill.github.io/"
+    },
+    {
+        title: "Squadron Training & Development",
+        description: "I manage comprehensive training programs including ground school, orientation flights, and advanced cadet certifications. Every cadet receives structured, progressive training.",
+        image: "Images/SUPT1.jpg",
+        tags: ["Training", "Development", "Certification"],
+        github: "https://michael6gledhill.github.io/",
+        live: "https://michael6gledhill.github.io/"
+    },
+    {
+        title: "Cadet Orientation Flights",
+        description: "I coordinate orientation flights that give cadets their first experience in flight. These flights are crucial for inspiring future pilots and aviation professionals.",
+        image: "Images/PFA1.jpg",
+        tags: ["Aviation", "Flight", "Experience"],
+        github: "https://michael6gledhill.github.io/",
+        live: "https://michael6gledhill.github.io/"
+    },
+    {
+        title: "Squadron Support & Administration",
+        description: "I manage day-to-day squadron operations, coordinate meetings, maintain records, and ensure compliance with CAP regulations and standards.",
+        image: "Images/SUPT2.jpg",
+        tags: ["Administration", "Operations", "Compliance"],
+        github: "https://michael6gledhill.github.io/",
+        live: "https://michael6gledhill.github.io/"
+    }
+];
 
 // Render projects dynamically
 function renderProjects() {
