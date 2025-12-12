@@ -37,7 +37,7 @@ const projects = [
         github: "https://michael6gledhill.github.io/",
         live: "https://michael6gledhill.github.io/"
     },
-    {
+    { 
         title: "Aerospace Education",
         description: "I develop and deliver aerospace education programs that inspire cadets to pursue aviation careers. These programs include flight principles, navigation, and aviation history.",
         image: "Images/ENC2.jpg",
