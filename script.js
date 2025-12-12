@@ -1,28 +1,52 @@
-// Projects data
+// Projects data - Civil Air Patrol Experience
 const projects = [
     {
-        title: "Photo Metadata App",
-        description: "Extract and organize photo metadata with an intuitive interface. Manage and analyze image data efficiently.",
-        emoji: "📸",
-        tags: ["Python", "UI", "Data Processing"],
-        github: "https://github.com/michael6gledhill",
+        title: "Cadet Leadership Program",
+        description: "As Cadet Commander, I lead the Heartland Composite Squadron's cadet corps. I oversee training programs, conduct leadership development, and mentor the next generation of aviation and emergency services professionals.",
+        image: "Images/Profile_CAP-modified.png",
+        tags: ["Leadership", "Training", "Mentorship"],
+        github: "https://michael6gledhill.github.io/",
         live: "https://michael6gledhill.github.io/"
     },
     {
-        title: "CyberPatriot Runbook",
-        description: "Comprehensive cybersecurity operations and hardening procedures. Documentation for security best practices.",
-        emoji: "🔒",
-        tags: ["Cybersecurity", "Documentation", "Security Hardening"],
-        github: "https://github.com/michael6gledhill",
+        title: "Emergency Services Operations",
+        description: "I coordinate and participate in Civil Air Patrol emergency services missions. Our squadron responds to search and rescue operations and provides aerial support for community emergencies.",
+        image: "Images/ENC1.jpg",
+        tags: ["Emergency Services", "SAR", "Operations"],
+        github: "https://michael6gledhill.github.io/",
         live: "https://michael6gledhill.github.io/"
     },
     {
-        title: "Personal Portfolio",
-        description: "Professional portfolio showcasing leadership, aviation, and technical experience with modern web design.",
-        emoji: "💼",
-        tags: ["HTML5", "CSS3", "JavaScript"],
-        github: "https://github.com/michael6gledhill/Michael-Gledhill-Portfolio",
-        live: "https://michael6gledhill.github.io/Michael-Gledhill-Portfolio/"
+        title: "Aerospace Education",
+        description: "I develop and deliver aerospace education programs that inspire cadets to pursue aviation careers. These programs include flight principles, navigation, and aviation history.",
+        image: "Images/ENC2.jpg",
+        tags: ["Education", "Aviation", "STEM"],
+        github: "https://michael6gledhill.github.io/",
+        live: "https://michael6gledhill.github.io/"
+    },
+    {
+        title: "Squadron Training & Development",
+        description: "I manage comprehensive training programs including ground school, orientation flights, and advanced cadet certifications. Every cadet receives structured, progressive training.",
+        image: "Images/SUPT1.jpg",
+        tags: ["Training", "Development", "Certification"],
+        github: "https://michael6gledhill.github.io/",
+        live: "https://michael6gledhill.github.io/"
+    },
+    {
+        title: "Cadet Orientation Flights",
+        description: "I coordinate orientation flights that give cadets their first experience in flight. These flights are crucial for inspiring future pilots and aviation professionals.",
+        image: "Images/PFA1.jpg",
+        tags: ["Aviation", "Flight", "Experience"],
+        github: "https://michael6gledhill.github.io/",
+        live: "https://michael6gledhill.github.io/"
+    },
+    {
+        title: "Squadron Support & Administration",
+        description: "I manage day-to-day squadron operations, coordinate meetings, maintain records, and ensure compliance with CAP regulations and standards.",
+        image: "Images/SUPT2.jpg",
+        tags: ["Administration", "Operations", "Compliance"],
+        github: "https://michael6gledhill.github.io/",
+        live: "https://michael6gledhill.github.io/"
     }
 ];
 
@@ -31,7 +55,9 @@ function renderProjects() {
     const projectsGrid = document.getElementById('projectsGrid');
     projectsGrid.innerHTML = projects.map(project => `
         <div class="project-card">
-            <div class="project-image">${project.emoji}</div>
+            <div class="project-image">
+                <img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
             <div class="project-content">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
@@ -39,8 +65,7 @@ function renderProjects() {
                     ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
                 </div>
                 <div class="project-links">
-                    <a href="${project.github}" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="${project.live}" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a href="${project.github}" target="_blank" rel="noopener noreferrer">Learn More</a>
                 </div>
             </div>
         </div>
