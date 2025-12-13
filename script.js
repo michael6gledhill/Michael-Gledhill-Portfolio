@@ -31,7 +31,7 @@ const projects = [
     {
         title: "Emergency Services Operations",
         description: "I coordinate and participate in Civil Air Patrol emergency services missions. Our squadron responds to search and rescue operations and provides aerial support for community emergencies.",
-        image: "Images/ENC1.jpg",
+        image: "Images/SAREX.jpg",
         tags: ["Emergency Services", "SAR", "Operations"],
         github: "https://michael6gledhill.github.io/",
         live: "https://michael6gledhill.github.io/"
@@ -55,7 +55,7 @@ const projects = [
     {
         title: "Cadet Orientation Flights",
         description: "I coordinate orientation flights that give cadets their first experience in flight. These flights are crucial for inspiring future pilots and aviation professionals.",
-        image: "Images/PFA1.jpg",
+        image: "Images/Flight.jpg",
         tags: ["Aviation", "Flight", "Experience"],
         github: "https://michael6gledhill.github.io/",
         live: "https://michael6gledhill.github.io/"
