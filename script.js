@@ -1,3 +1,31 @@
+// Welcome Overlay Management
+function setupWelcomeOverlay() {
+    const welcomeOverlay = document.getElementById('welcomeOverlay');
+    const hasVisited = localStorage.getItem('hasVisitedPortfolio');
+    
+    // Show welcome overlay only on first visit
+    if (!hasVisited) {
+        // Allow dismiss after 2 seconds minimum
+        setTimeout(() => {
+            document.addEventListener('scroll', dismissWelcome);
+            document.addEventListener('click', dismissWelcome);
+        }, 2000);
+    } else {
+        welcomeOverlay.classList.add('hidden');
+        welcomeOverlay.style.display = 'none';
+    }
+    
+    function dismissWelcome() {
+        welcomeOverlay.classList.add('hidden');
+        localStorage.setItem('hasVisitedPortfolio', 'true');
+        document.removeEventListener('scroll', dismissWelcome);
+        document.removeEventListener('click', dismissWelcome);
+        setTimeout(() => {
+            welcomeOverlay.style.display = 'none';
+        }, 800);
+    }
+}
+
 // Theme Toggle
 function setupThemeToggle() {
     const themeToggle = document.getElementById('themeToggle');
@@ -206,6 +234,7 @@ function setupActiveNavLink() {
 
 // Initialize all functions
 document.addEventListener('DOMContentLoaded', () => {
+    setupWelcomeOverlay();
     setupThemeToggle();
     renderProjects();
     setupMobileMenu();
