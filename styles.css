@@ -10,12 +10,14 @@
     --accent-color: #f093fb;
     --text-dark: #1a1a1a;
     --text-light: #6b6b6b;
+    --text-secondary: #9a9a9a;
     --bg-light: #f8f9fa;
     --bg-white: #ffffff;
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-bg: rgba(255, 255, 255, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.25);
     --shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    --shadow-sm: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 8px 24px rgba(102, 126, 234, 0.2);
 }
 
 [data-theme="dark"] {
@@ -304,13 +306,13 @@ body {
 
 /* Section Styling */
 section {
-    padding: 120px 0;
+    padding: 100px 0;
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
-    margin: 30px;
-    border-radius: 25px;
+    margin: 40px;
+    border-radius: 16px;
     border: 1px solid var(--glass-border);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-md);
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards;
 }
@@ -372,13 +374,13 @@ section h2::after {
 }
 
 .stat {
-    text-align: center;
-    padding: 2.5rem;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(240, 147, 251, 0.15));
-    border-radius: 20px;
+    text-align: left;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(240, 147, 251, 0.08));
+    border-radius: 12px;
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(15px);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -388,22 +390,23 @@ section h2::after {
 .stat-image {
     width: 60px;
     height: 60px;
-    border-radius: 12px;
+    border-radius: 10px;
     object-fit: cover;
     flex-shrink: 0;
-    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .stat:hover .stat-image {
-    transform: scale(1.05);
-    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5);
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
 }
 
 .stat:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
     border-color: var(--primary-color);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(240, 147, 251, 0.12));
 }
 
 .stat p {
@@ -528,18 +531,20 @@ section h2::after {
 }
 
 .skill-category {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(240, 147, 251, 0.1));
-    padding: 2.5rem;
-    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(240, 147, 251, 0.08));
+    padding: 2.2rem;
+    border-radius: 12px;
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(15px);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .skill-category:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
     border-color: var(--primary-color);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(240, 147, 251, 0.12));
+}
 }
 
 .skill-category h3 {
@@ -606,22 +611,23 @@ section h2::after {
 
 .form-group input,
 .form-group textarea {
-    padding: 14px 18px;
+    padding: 12px 16px;
     border: 1px solid var(--glass-border);
-    border-radius: 12px;
+    border-radius: 8px;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 0.95rem;
     background: var(--glass-bg);
     color: var(--text-dark);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
+    font-weight: 400;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
 }
 
 .form-group button {
@@ -650,20 +656,20 @@ section h2::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     text-decoration: none;
     font-size: 0;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.25);
 }
 
 .social-link:hover {
-    transform: scale(1.15) translateY(-5px);
-    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+    transform: scale(1.12) translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
 
 .social-link span {
