@@ -1,13 +1,14 @@
 // Theme Toggle
 function setupThemeToggle() {
     const themeToggle = document.getElementById('themeToggle');
+    const toggleIcon = themeToggle.querySelector('.toggle-icon');
     const html = document.documentElement;
     
     // Check for saved theme or prefer-color-scheme
     const savedTheme = localStorage.getItem('theme') || 'light';
     if (savedTheme === 'dark') {
         html.setAttribute('data-theme', 'dark');
-        themeToggle.textContent = '☀️';
+        toggleIcon.textContent = '◑';
     }
     
     themeToggle.addEventListener('click', () => {
@@ -15,7 +16,7 @@ function setupThemeToggle() {
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         html.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-        themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        toggleIcon.textContent = newTheme === 'dark' ? '◑' : '◐';
     });
 }
 

@@ -360,6 +360,21 @@ section h2 {
     cursor: pointer;
 }
 
+.stat-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.stat:hover .stat-image {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5);
+}
+
 .stat:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow);
