@@ -687,3 +687,322 @@ body {
         font-size: 2rem;
     }
 }
+
+/* ============================================
+   RESUME PAGE STYLES
+   ============================================ */
+
+.resume-page {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+.resume-header {
+    padding: 60px 0;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border);
+}
+
+.resume-title-section h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.resume-title-section .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.resume-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.resume-content {
+    padding: 60px 0;
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+}
+
+.resume-section {
+    margin-bottom: 2.5rem;
+}
+
+.resume-section-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.resume-list p {
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.resume-text {
+    color: var(--text-light);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.skill-list {
+    list-style: none;
+    columns: 2;
+    gap: 1rem;
+}
+
+.skill-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.6rem;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.skill-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.cert-list {
+    list-style: none;
+}
+
+.cert-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.cert-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.job-entry {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.job-entry:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.job-header h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.job-date {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+.job-subtitle {
+    font-size: 0.95rem;
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.job-details {
+    list-style: none;
+    padding-left: 0;
+}
+
+.job-details li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.6rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.job-details li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-size: 0.6rem;
+}
+
+.education-entry {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.education-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3rem;
+}
+
+.edu-header h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.edu-date {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    white-space: nowrap;
+}
+
+.edu-school {
+    font-size: 0.9rem;
+    color: var(--primary);
+    margin-bottom: 0.6rem;
+}
+
+.edu-list {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.edu-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.4rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.edu-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+.achievement-list {
+    list-style: none;
+}
+
+.achievement-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.achievement-list li::before {
+    content: '★';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+}
+
+.skills-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.skills-2col > div > p {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .resume-actions,
+    .animated-bg {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .resume-page {
+        padding-top: 0;
+    }
+
+    .resume-header {
+        padding: 20px 0;
+        background: white;
+        border: none;
+    }
+
+    .resume-content {
+        padding: 20px 0;
+    }
+
+    .job-entry,
+    .education-entry {
+        page-break-inside: avoid;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-date {
+        margin-left: 0;
+        margin-top: 0.3rem;
+    }
+
+    .skills-2col {
+        grid-template-columns: 1fr;
+    }
+}
