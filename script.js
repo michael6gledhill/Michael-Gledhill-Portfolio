@@ -19,7 +19,6 @@ function setupThemeToggle() {
     });
 }
 
-// Projects data - Civil Air Patrol Experience
 const projects = [
     {
         title: "Cadet Leadership Program",
