@@ -358,14 +358,17 @@ section h2 {
     backdrop-filter: blur(15px);
     transition: all 0.3s ease;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .stat-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
     object-fit: cover;
-    margin: 0 auto 1rem;
+    flex-shrink: 0;
     box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
     transition: all 0.3s ease;
 }
@@ -381,13 +384,13 @@ section h2 {
     border-color: var(--primary-color);
 }
 
-.stat h3 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
 .stat p {
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-align: left;
+    margin: 0;
+}
     color: var(--text-light);
     font-weight: 600;
     font-size: 1.05rem;
