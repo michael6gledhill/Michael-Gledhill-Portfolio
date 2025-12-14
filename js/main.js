@@ -69,6 +69,7 @@ function populatePage() {
     populateActivities();
     populateGallery();
     populateSkills();
+    populateContact();
     
     // Set current year in footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
@@ -309,6 +310,55 @@ function populateSkills() {
         } else {
             technicalTags.innerHTML = '<p style="color: var(--neutral-gray);">Add technical skills to profile.json</p>';
         }
+    }
+}
+
+// ============================================
+// CONTACT INFORMATION
+// ============================================
+
+/**
+ * Populate contact links with data from profile.json
+ * Formats contact information for email, phone, LinkedIn, and GitHub
+ */
+function populateContact() {
+    if (!profileData.contact) {
+        console.warn('No contact data in profile.json');
+        return;
+    }
+    
+    // Email Link
+    const emailLink = document.getElementById('contact-email');
+    if (emailLink && profileData.contact.email) {
+        emailLink.href = `mailto:${profileData.contact.email}`;
+        emailLink.title = `Email: ${profileData.contact.email}`;
+    }
+    
+    // Phone Link
+    const phoneLink = document.getElementById('contact-phone');
+    if (phoneLink && profileData.contact.phone) {
+        // Format phone number for tel: protocol by removing non-digits
+        const phoneDigits = profileData.contact.phone.replace(/\D/g, '');
+        phoneLink.href = `tel:+1${phoneDigits}`;
+        phoneLink.title = `Call: ${profileData.contact.phone}`;
+    }
+    
+    // LinkedIn Link
+    const linkedInLink = document.getElementById('contact-linkedin');
+    if (linkedInLink && profileData.contact.linkedin) {
+        linkedInLink.href = profileData.contact.linkedin;
+        linkedInLink.target = '_blank';
+        linkedInLink.rel = 'noopener noreferrer';
+        linkedInLink.title = 'Visit LinkedIn Profile';
+    }
+    
+    // GitHub Link
+    const githubLink = document.getElementById('contact-github');
+    if (githubLink && profileData.contact.github) {
+        githubLink.href = profileData.contact.github;
+        githubLink.target = '_blank';
+        githubLink.rel = 'noopener noreferrer';
+        githubLink.title = 'Visit GitHub Profile';
     }
 }
 

@@ -1319,6 +1319,16 @@ a:hover {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
     
+    /* Contact Section */
+    .contact-links {
+        gap: var(--spacing-lg);
+    }
+    
+    .contact-link {
+        min-width: 90px;
+        padding: var(--spacing-md);
+    }
+    
     /* Section Padding */
     .section {
         padding: var(--spacing-2xl) 0;
@@ -1397,6 +1407,24 @@ a:hover {
     .modal-close {
         top: 10px;
         right: 10px;
+    }
+    
+    /* Contact Section */
+    .contact-links {
+        gap: var(--spacing-md);
+    }
+    
+    .contact-link {
+        min-width: 80px;
+        padding: var(--spacing-sm);
+    }
+    
+    .contact-icon {
+        font-size: var(--fs-xl);
+    }
+    
+    .contact-label {
+        font-size: var(--fs-xs);
     }
 }
 
