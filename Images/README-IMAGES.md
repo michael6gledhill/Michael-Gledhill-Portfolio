@@ -1,161 +1,265 @@
-# Image Placeholder Guide
+# Images Guide
 
-This directory should contain your portfolio images. Here's what you need:
+This directory contains all images used in your CAP Portfolio website.
 
-## Required Images
-
-### 1. Hero Image (`hero-placeholder.jpg`)
-- **Purpose**: Full-width background image in hero section
-- **Recommended Size**: 1920x1080px (16:9 ratio)
-- **Suggested Content**: 
-  - Professional squadron formation photo
-  - Leadership event or ceremony
-  - Cadet parade or color guard
-  - Aviation/aerospace themed image
-- **Tips**: 
-  - Ensure high quality and professional appearance
-  - Use images where you're visible if possible
-  - Dark images work better (overlay text is more readable)
-
-### 2. About Section Image (`about-placeholder.jpg`)
-- **Purpose**: Profile image in about section
-- **Recommended Size**: 600x600px (1:1 ratio, square)
-- **Suggested Content**:
-  - Professional portrait
-  - You in uniform
-  - Leadership position photo
-- **Tips**:
-  - Should be a clear, professional photo of you
-  - Appropriate for military/professional setting
-  - Good contrast and lighting
-
-### 3. Gallery Images (`gallery-1.jpg` through `gallery-8.jpg`)
-- **Purpose**: Photo grid showcasing CAP activities
-- **Recommended Size**: 800x600px to 1200x900px
-- **Suggested Content**:
-  - Squadron formation photos
-  - Leadership events or ceremonies
-  - Team training exercises
-  - Summer encampment moments
-  - Drill competitions
-  - Community service activities
-  - Orientation flights
-  - Cadet debrief or instruction
-- **Tips**:
-  - Mix candid shots with formal photos
-  - Show variety of CAP activities
-  - Ensure at least 2-3 photos show leadership
-  - Use consistent style/tone
-
-## How to Add Your Images
-
-1. **Prepare Your Images**
-   - Resize to recommended dimensions
-   - Compress for web (use TinyPNG.com or similar)
-   - Save as JPEG (.jpg) for photos
-   - Use PNG only for graphics/logos
-
-2. **Place Files in This Directory**
-   - Copy images to `images/` folder
-   - Name them exactly as specified (case-sensitive on Linux):
-     - `hero-placeholder.jpg`
-     - `about-placeholder.jpg`
-     - `gallery-1.jpg`, `gallery-2.jpg`, etc.
-
-3. **Update Profile Data**
-   - If using different filenames, update `data/profile.json`
-   - In gallery array, update `src` field:
-     ```json
-     "gallery": [
-       {
-         "src": "images/gallery-1.jpg",
-         "caption": "My Caption Here"
-       }
-     ]
-     ```
-
-## Image Best Practices
-
-### Optimization
-- Aim for 100-200KB per image maximum
-- Use compression tools:
-  - TinyPNG.com (online)
-  - ImageOptim (Mac)
-  - FileOptimizer (Windows)
-  - ImageMagick (command line)
-
-### Quality
-- Use high-resolution originals (3000x2000px+)
-- Scale down to web size carefully
-- Maintain aspect ratios
-- Ensure all text is readable
-
-### Accessibility
-- Always provide descriptive captions
-- Alt text should be clear and specific
-- Avoid text embedded in images when possible
-
-### Performance
-- Modern browsers: JPEG 80-85% quality = excellent
-- PNG for images with transparency only
-- Consider WebP format for modern browsers (with JPEG fallback)
-
-## Placeholder Behavior
-
-If images are missing:
-- `hero-placeholder.jpg` → Shows with blue gradient overlay
-- `about-placeholder.jpg` → Shows with placeholder background
-- `gallery-*.jpg` → Missing images show in grid (will appear broken)
-
-The website will still be fully functional, but users should replace these as soon as possible for professional appearance.
-
-## Example File Structure
+## Directory Structure
 
 ```
 images/
-├── hero-placeholder.jpg          ← Replace with your hero image
-├── about-placeholder.jpg         ← Replace with your profile photo
-├── gallery-1.jpg                 ← Squadron formation
-├── gallery-2.jpg                 ← Leadership ceremony
-├── gallery-3.jpg                 ← Team training
-├── gallery-4.jpg                 ← Summer encampment
-├── gallery-5.jpg                 ← Drill competition
-├── gallery-6.jpg                 ← Community service
-├── gallery-7.jpg                 ← Orientation flight
-└── gallery-8.jpg                 ← Squadron debrief
+├── README-IMAGES.md (this file)
+├── hero-image.jpg (your profile/squadron background image)
+├── about-image.jpg (optional: additional about section image)
+│
+├── wing-logo.png (your wing insignia)
+├── squadron-logo.png (your squadron insignia)
+├── cap-crest.png (official CAP crest)
+│
+└── gallery/ (optional: for portfolio gallery photos)
+    ├── photo-1.jpg
+    ├── photo-2.jpg
+    └── ...more photos
 ```
-
-## Recommended Tools
-
-**Image Compression:**
-- TinyPNG.com (free, online)
-- ImageOptim (Mac, free)
-- PunyPNG (Windows, free)
-
-**Image Editing:**
-- Photoshop
-- Figma
-- Pixlr.com (free, online)
-- GIMP (free, desktop)
-
-**Resizing:**
-- Canva (free with limits)
-- Pixlr (free, online)
-- ImageMagick (command line)
-
-**Format Conversion:**
-- CloudConvert.com
-- Online-Convert.com
-- ImageMagick
-
-## Legal/Ethical Considerations
-
-- Ensure you have rights to use all images
-- Get permissions from other cadets in photos
-- Follow your unit's photo policy
-- Respect privacy of other individuals
-- Follow military/CAP regulations on photography
 
 ---
 
-**Need help?** See the README.md for complete customization guide.
+## Logo Section Images
+
+The logo section displays three organizational logos at the top of your portfolio website. This section helps visitors immediately identify your organizational affiliation.
+
+### Wing Logo
+- **File:** `wing-logo.png`
+- **Dimensions:** Recommended 150px × 150px (will scale responsively)
+- **Format:** PNG with transparent background preferred
+- **Description:** Your wing's insignia/emblem
+- **How to Get:** 
+  - Contact your Wing Headquarters
+  - Check official wing documentation
+  - Request from your Wing Public Affairs Officer
+
+**Placeholder:** `wing-logo-placeholder.png` (remove when you add your actual logo)
+
+### Squadron Logo
+- **File:** `squadron-logo.png`
+- **Dimensions:** Recommended 150px × 150px (will scale responsively)
+- **Format:** PNG with transparent background preferred
+- **Description:** Your squadron's patch or insignia
+- **How to Get:**
+  - Request from your Squadron Commander
+  - Found in squadron documentation
+  - Contact your Squadron Public Affairs Officer
+
+**Placeholder:** `squadron-logo-placeholder.png` (remove when you add your actual logo)
+
+### CAP Crest (Official)
+- **File:** `cap-crest.png`
+- **Dimensions:** Recommended 180px × 180px (center logo is prominently displayed)
+- **Format:** PNG with transparent background
+- **Description:** Official Civil Air Patrol organizational crest
+- **Official Source:** 
+  - Civil Air Patrol Brand Guidelines: https://civilairpatrol.frontify.com/d/crhrf1Aw1Ci9
+  - CAP Public Website: https://www.gocivilairpatrol.com
+  - Contact: CAP National Headquarters (Public Affairs)
+
+**Important:** Use only the official CAP crest provided by Civil Air Patrol. Do not modify or recreate without permission.
+
+**Placeholder:** `cap-crest-placeholder.png` (remove when you add the official logo)
+
+---
+
+## Hero Section Image
+
+### Background Image
+- **File:** `hero-image.jpg` (or `hero-image.png`)
+- **Dimensions:** 
+  - Minimum: 1200px wide × 600px tall
+  - Recommended: 1600px wide × 900px tall (16:9 aspect ratio)
+- **Format:** JPG for photos (better compression) or PNG for graphics
+- **Description:** Your background image for the hero section
+- **Suggestions:**
+  - Professional squadron/unit photo
+  - Aerospace-related imagery (aircraft, sky, training)
+  - Leadership or cadet group photo
+  - CAP activity in action (search and rescue, training, etc.)
+
+**Tips:**
+- Image will be overlaid with a semi-transparent dark overlay
+- Make sure text is readable over your chosen image
+- Use high-resolution images for better quality
+- Consider vertical composition for mobile devices
+
+---
+
+## Gallery Images (Optional)
+
+### Portfolio Gallery Photos
+- **Location:** `images/gallery/` (create if needed)
+- **File Format:** `photo-1.jpg`, `photo-2.jpg`, etc.
+- **Dimensions:** 
+  - Minimum: 800px × 600px
+  - Recommended: 1200px × 900px
+- **Format:** JPG (recommended for photos)
+- **Max File Size:** 300-500 KB per image (for performance)
+
+**Gallery Usage:**
+- Display your accomplishments, training, events
+- Include photos from encampments, competitions, service projects
+- Show leadership in action
+- Demonstrate CAP involvement
+
+**Tips:**
+- Gallery will display as a responsive grid (3 columns on desktop, 2 on tablet, 1 on mobile)
+- Clicking gallery images opens a lightbox modal
+- All images should be in landscape orientation for best presentation
+- Use descriptive captions in `profile.json` for each gallery image
+
+---
+
+## About Section Image (Optional)
+
+### Additional About Image
+- **File:** `about-image.jpg`
+- **Dimensions:** 400px × 400px to 500px × 500px (square preferred)
+- **Format:** JPG or PNG
+- **Description:** Optional professional photo for about section
+- **Suggestion:** Professional headshot or leadership portrait
+
+---
+
+## File Organization Best Practices
+
+1. **Name Clearly:** Use descriptive names (`wing-logo.png` not `logo1.png`)
+2. **Optimize Size:** Compress images without losing quality
+3. **Use Consistent Formats:** 
+   - Photos → JPG
+   - Logos/Graphics → PNG (for transparency)
+4. **Responsive Sizing:** Images scale automatically; use descriptive width/height ratios
+5. **Keep It Organized:** Group related images in subdirectories (e.g., `gallery/`)
+
+---
+
+## How to Add/Update Images
+
+### 1. Replace Placeholder Logos
+1. Delete `wing-logo-placeholder.png`, `squadron-logo-placeholder.png`, `cap-crest-placeholder.png`
+2. Add your actual logo files:
+   - `wing-logo.png`
+   - `squadron-logo.png`
+   - `cap-crest.png`
+3. Update `data/profile.json`:
+   ```json
+   "logos": {
+     "wingLogo": "images/wing-logo.png",
+     "squadronLogo": "images/squadron-logo.png",
+     "capCrest": "images/cap-crest.png"
+   }
+   ```
+
+### 2. Add Hero Image
+1. Place your image in `images/` directory
+2. Update `index.html` background image (search for `hero` section style)
+   OR update via CSS in `css/styles.css`
+3. Recommend: Name it `hero-image.jpg` for consistency
+
+### 3. Add Gallery Images
+1. Create `images/gallery/` folder if it doesn't exist
+2. Add your photos as `photo-1.jpg`, `photo-2.jpg`, etc.
+3. Update `data/profile.json` with gallery entries:
+   ```json
+   "gallery": [
+     {
+       "src": "images/gallery/photo-1.jpg",
+       "caption": "Leadership Training Exercise"
+     }
+   ]
+   ```
+
+---
+
+## Image Optimization Tools
+
+For better performance, optimize images before uploading:
+
+- **Online Tools:**
+  - TinyPNG: https://tinypng.com (great for JPG/PNG)
+  - ImageOptim: https://imageoptim.com (Mac)
+  - FileOptimizer: http://nikkhokkho.sourceforge.net/ (Windows)
+
+- **Recommended Settings:**
+  - Logos/Graphics (PNG): 50-150 KB
+  - Photos (JPG): 50-200 KB per image
+  - Hero image: 100-300 KB
+
+---
+
+## CAP Brand Guidelines Reference
+
+For official guidance on CAP logos and branding:
+
+- **Main Resource:** https://civilairpatrol.frontify.com/d/crhrf1Aw1Ci9/brand-guide-logos
+- **CAP National Website:** https://www.gocivilairpatrol.com
+- **Permission & Usage:** Contact CAP Public Affairs for logo usage guidelines
+
+---
+
+## Troubleshooting
+
+**Images Not Showing?**
+- Check file path in `data/profile.json` matches actual file names
+- Ensure file extensions are correct (`.jpg`, `.png`, not `.JPG`, `.PNG`)
+- Verify images are in the `images/` directory
+- Open browser console (F12) to check for 404 errors
+
+**Images Look Blurry?**
+- Replace with higher resolution versions
+- Ensure image dimensions match recommendations
+- Check browser zoom level (should be 100%)
+
+**Logos Look Stretched?**
+- Verify image aspect ratio is correct
+- CSS constrains aspect ratio; images should not be distorted
+- Re-save logo with correct proportions
+
+**Performance Issues?**
+- Reduce image file sizes using optimization tools
+- Limit gallery to 8-12 images maximum
+- Use JPG format for photographs, PNG for logos
+
+---
+
+## Image Checklist
+
+- [ ] Wing logo (150×150px PNG)
+- [ ] Squadron logo (150×150px PNG)
+- [ ] CAP crest (180×180px PNG) - official version
+- [ ] Hero background image (1600×900px JPG)
+- [ ] Gallery photos (800×600px+ JPG) - optional
+- [ ] About section image (400-500px square) - optional
+- [ ] All image paths updated in `profile.json`
+- [ ] No placeholder images remaining in production
+- [ ] All file sizes optimized
+
+---
+
+## Next Steps
+
+1. **Obtain Your Logos:**
+   - Contact Wing/Squadron for official logos
+   - Download official CAP crest from brand guidelines
+   
+2. **Add Images:**
+   - Replace placeholders with actual files
+   - Update file paths in `profile.json`
+   
+3. **Test:**
+   - View on desktop, tablet, and mobile
+   - Ensure logos display correctly
+   - Verify image quality and alignment
+
+4. **Deploy:**
+   - Commit image files to Git
+   - Push to GitHub
+   - Verify images display on GitHub Pages
+
+---
+
+**Questions?** Refer to the main [README.md](../README.md) or [CUSTOMIZATION-GUIDE.md](../docs/CUSTOMIZATION-GUIDE.md) for more help.

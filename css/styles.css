@@ -139,6 +139,56 @@ a:hover {
 }
 
 /* ========================================
+   LOGO HEADER SECTION
+   ======================================== */
+.logo-header {
+    background-color: var(--bg-light);
+    padding: var(--spacing-xl) 0;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.logos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.logo-img {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform var(--transition-base);
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+.logo-crest {
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.logo-label {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ========================================
    NAVIGATION
    ======================================== */
 .navbar {
@@ -1034,6 +1084,29 @@ a:hover {
     /* Container */
     .container {
         padding: 0 var(--spacing-md);
+    }
+    
+    /* Logo Section */
+    .logo-header {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .logos-grid {
+        gap: var(--spacing-md);
+    }
+    
+    .logo-img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    
+    .logo-crest {
+        max-width: 120px;
+        max-height: 120px;
+    }
+    
+    .logo-label {
+        font-size: 0.7rem;
     }
     
     /* Awards & Activities Grid */

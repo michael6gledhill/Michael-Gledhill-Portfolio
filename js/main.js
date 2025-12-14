@@ -60,6 +60,9 @@ function populatePage() {
     document.getElementById('about-bio').textContent = profileData.bio || '[EDIT THIS]';
     document.getElementById('about-mission').textContent = profileData.capInvolvement || '[EDIT THIS]';
     
+    // Populate logos
+    populateLogos();
+    
     // Populate dynamic sections
     populateTimeline();
     populateAwards();
@@ -69,6 +72,38 @@ function populatePage() {
     
     // Set current year in footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
+}
+
+// ============================================
+// LOGOS (WING, SQUADRON, CAP CREST)
+// ============================================
+
+/**
+ * Populate logo section with organizational logos
+ */
+function populateLogos() {
+    if (!profileData.logos) {
+        console.warn('No logos data in profile.json');
+        return;
+    }
+    
+    // Set wing logo
+    const wingLogoEl = document.getElementById('wing-logo');
+    if (wingLogoEl && profileData.logos.wingLogo) {
+        wingLogoEl.src = profileData.logos.wingLogo;
+    }
+    
+    // Set CAP crest
+    const capCrestEl = document.getElementById('cap-crest');
+    if (capCrestEl && profileData.logos.capCrest) {
+        capCrestEl.src = profileData.logos.capCrest;
+    }
+    
+    // Set squadron logo
+    const squadronLogoEl = document.getElementById('squadron-logo');
+    if (squadronLogoEl && profileData.logos.squadronLogo) {
+        squadronLogoEl.src = profileData.logos.squadronLogo;
+    }
 }
 
 // ============================================
