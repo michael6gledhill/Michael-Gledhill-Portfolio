@@ -38,6 +38,7 @@ This file explains how this portfolio is configured for GitHub Pages deployment.
 3. **Folder**: Select "/ (root)"
 4. Click **Save**
 
+
 ### Step 4: Wait for Deployment
 
 - GitHub will build and deploy automatically
