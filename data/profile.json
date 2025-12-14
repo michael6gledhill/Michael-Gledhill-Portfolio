@@ -11,6 +11,13 @@
     "capCrest": "images/cap-crest-official.png"
   },
   
+  "contact": {
+    "email": "your.email@example.com",
+    "phone": "(123) 456-7890",
+    "linkedin": "https://linkedin.com/in/yourprofile",
+    "github": "https://github.com/yourprofile"
+  },
+  
   "bio": "As a dedicated Civil Air Patrol cadet, I am committed to advancing aerospace education and developing leadership skills. My journey through CAP has been marked by progressive responsibility, mentoring younger cadets, and a passion for aviation. I believe in leading by example and fostering a culture of excellence within our squadron.",
   
   "capInvolvement": "I have been actively involved in Civil Air Patrol for [X] years. During this time, I have progressed through multiple ranks, held key leadership positions, and contributed to the CAP's core missions of aerospace education, emergency services, and cadet development. My CAP experience has shaped my values of integrity, leadership, and service to community.",
