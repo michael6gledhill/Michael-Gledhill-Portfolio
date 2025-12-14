@@ -26,33 +26,23 @@ images/
 
 The logo section displays three organizational logos at the top of your portfolio website. This section helps visitors immediately identify your organizational affiliation.
 
-### Wing Logo
-- **File:** `wing-logo.png`
-- **Dimensions:** Recommended 150px × 150px (will scale responsively)
-- **Format:** PNG with transparent background preferred
-- **Description:** Your wing's insignia/emblem
-- **How to Get:** 
-  - Contact your Wing Headquarters
-  - Check official wing documentation
-  - Request from your Wing Public Affairs Officer
+### Wing Logo ✓ CONFIGURED
+- **File:** `kentucky-wing-logo.png`
+- **Dimensions:** ~150px × 150px (scales responsively)
+- **Format:** PNG with transparent background
+- **Description:** Kentucky Wing official insignia
+- **Source:** Civil Air Patrol - Kentucky Wing
 
-**Placeholder:** `wing-logo-placeholder.png` (remove when you add your actual logo)
+### Squadron Logo ✓ CONFIGURED
+- **File:** `hartland-composite-squadron.png`
+- **Dimensions:** ~150px × 150px (scales responsively)
+- **Format:** PNG with transparent background
+- **Description:** Hartland Composite Squadron official patch
+- **Source:** Civil Air Patrol - Hartland Composite Squadron
 
-### Squadron Logo
-- **File:** `squadron-logo.png`
-- **Dimensions:** Recommended 150px × 150px (will scale responsively)
-- **Format:** PNG with transparent background preferred
-- **Description:** Your squadron's patch or insignia
-- **How to Get:**
-  - Request from your Squadron Commander
-  - Found in squadron documentation
-  - Contact your Squadron Public Affairs Officer
-
-**Placeholder:** `squadron-logo-placeholder.png` (remove when you add your actual logo)
-
-### CAP Crest (Official)
-- **File:** `cap-crest.png`
-- **Dimensions:** Recommended 180px × 180px (center logo is prominently displayed)
+### CAP Crest (Official) ✓ CONFIGURED
+- **File:** `cap-crest-official.png`
+- **Dimensions:** ~180px × 180px (center logo is prominently displayed)
 - **Format:** PNG with transparent background
 - **Description:** Official Civil Air Patrol organizational crest
 - **Official Source:** 
@@ -60,9 +50,7 @@ The logo section displays three organizational logos at the top of your portfoli
   - CAP Public Website: https://www.gocivilairpatrol.com
   - Contact: CAP National Headquarters (Public Affairs)
 
-**Important:** Use only the official CAP crest provided by Civil Air Patrol. Do not modify or recreate without permission.
-
-**Placeholder:** `cap-crest-placeholder.png` (remove when you add the official logo)
+**Status:** All official logos are now integrated and configured!
 
 ---
 
