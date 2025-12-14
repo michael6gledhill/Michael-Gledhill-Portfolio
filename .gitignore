@@ -3,7 +3,11 @@ node_modules/
 *.log
 .env
 .env.local
+.vscode/settings.json
 dist/
 build/
-.vscode/
+*.swp
+*.swo
+*~
 .idea/
+*.iml

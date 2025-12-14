@@ -1,0 +1,173 @@
+{
+  "name": "Your Name",
+  "rank": "Cadet Colonel",
+  "branch": "Civil Air Patrol",
+  "unit": "[Your Unit Number and Name]",
+  "missionStatement": "Developing the next generation of aerospace leaders through integrity, excellence, and service",
+  
+  "bio": "As a dedicated Civil Air Patrol cadet, I am committed to advancing aerospace education and developing leadership skills. My journey through CAP has been marked by progressive responsibility, mentoring younger cadets, and a passion for aviation. I believe in leading by example and fostering a culture of excellence within our squadron.",
+  
+  "capInvolvement": "I have been actively involved in Civil Air Patrol for [X] years. During this time, I have progressed through multiple ranks, held key leadership positions, and contributed to the CAP's core missions of aerospace education, emergency services, and cadet development. My CAP experience has shaped my values of integrity, leadership, and service to community.",
+  
+  "experience": [
+    {
+      "date": "2024 - Present",
+      "title": "Squadron Cadet Commander",
+      "description": "Leading a squadron of 40+ cadets. Responsible for squadron operations, training programs, development of subordinate officers, and mission execution."
+    },
+    {
+      "date": "2023 - 2024",
+      "title": "Deputy Squadron Cadet Commander",
+      "description": "Supported the cadet commander in all squadron operations. Oversaw cadet training programs and drill team leadership."
+    },
+    {
+      "date": "2022 - 2023",
+      "title": "Flight Commander",
+      "description": "Commanded a flight of 10 cadets. Responsible for flight training, discipline, and readiness. Developed and executed weekly training plans."
+    },
+    {
+      "date": "2021 - 2022",
+      "title": "Element Leader",
+      "description": "Led an element of 4 cadets. Mentored junior cadets and represented my element in squadron activities."
+    },
+    {
+      "date": "2020 - 2021",
+      "title": "Cadet Airman Basic",
+      "description": "Joined CAP and began my journey in aerospace education and military training."
+    }
+  ],
+  
+  "awards": [
+    {
+      "icon": "🏆",
+      "title": "Leadership Excellence Award",
+      "date": "2024",
+      "description": "Awarded for outstanding leadership and dedication to cadet development."
+    },
+    {
+      "icon": "🎖️",
+      "title": "CAP Ribbon of Appreciation",
+      "date": "2023",
+      "description": "Recognition of significant contributions to squadron operations."
+    },
+    {
+      "icon": "📜",
+      "title": "Aerospace Education Certificate",
+      "date": "2022",
+      "description": "Completion of CAP's comprehensive aerospace education program."
+    },
+    {
+      "icon": "⭐",
+      "title": "Distinguished Cadet Award",
+      "date": "2021",
+      "description": "Achievement in academic excellence and cadet development."
+    },
+    {
+      "icon": "🎯",
+      "title": "Orientation Pilot Certificate",
+      "date": "2023",
+      "description": "Completion of CAP orientation flight training."
+    }
+  ],
+  
+  "activities": [
+    {
+      "type": "Encampment",
+      "title": "Summer Encampment 2024",
+      "date": "June 2024",
+      "description": "Participated in week-long regional encampment focusing on aerospace training, leadership development, and team building."
+    },
+    {
+      "type": "Emergency Services",
+      "title": "Search and Rescue Operations",
+      "date": "Ongoing",
+      "description": "Participated in multiple SAR missions supporting local and regional search operations. Trained in emergency procedures and ground support."
+    },
+    {
+      "type": "Community Service",
+      "title": "Local Food Bank Volunteer",
+      "date": "2024",
+      "description": "Led squadron volunteer effort at community food bank, impacting 200+ families in need."
+    },
+    {
+      "type": "Competition",
+      "title": "Regional Drill Competition",
+      "date": "April 2024",
+      "description": "Competed with squadron drill team at regional competition. Finished in top 5 teams."
+    },
+    {
+      "type": "Encampment",
+      "title": "Cadet Officer School",
+      "date": "March 2024",
+      "description": "Intensive officer training focused on leadership principles, CAP regulations, and advanced cadet management."
+    },
+    {
+      "type": "Flight Activity",
+      "title": "Aerospace STEM Workshop",
+      "date": "February 2024",
+      "description": "Organized and led workshop teaching basic aerodynamics and flight principles to junior cadets."
+    }
+  ],
+  
+  "gallery": [
+    {
+      "src": "images/gallery-1.jpg",
+      "caption": "Squadron Formation"
+    },
+    {
+      "src": "images/gallery-2.jpg",
+      "caption": "Leadership Ceremony"
+    },
+    {
+      "src": "images/gallery-3.jpg",
+      "caption": "Team Training Exercise"
+    },
+    {
+      "src": "images/gallery-4.jpg",
+      "caption": "Summer Encampment"
+    },
+    {
+      "src": "images/gallery-5.jpg",
+      "caption": "Drill Competition"
+    },
+    {
+      "src": "images/gallery-6.jpg",
+      "caption": "Community Service Project"
+    },
+    {
+      "src": "images/gallery-7.jpg",
+      "caption": "Orientation Flight"
+    },
+    {
+      "src": "images/gallery-8.jpg",
+      "caption": "Squadron Debrief"
+    }
+  ],
+  
+  "skills": {
+    "leadership": [
+      "Team Leadership",
+      "Strategic Planning",
+      "Decision Making",
+      "Conflict Resolution",
+      "Mentorship",
+      "Public Speaking",
+      "Change Management",
+      "Delegation",
+      "Problem Solving",
+      "Cadet Development"
+    ],
+    "technical": [
+      "Aeronautics",
+      "Aerospace Engineering",
+      "Flight Operations",
+      "Emergency Procedures",
+      "Mission Planning",
+      "Risk Management",
+      "Technical Writing",
+      "Data Analysis"
+    ]
+  },
+  
+  "contact": "Connect with me on LinkedIn or via my unit's official channels."
+}
